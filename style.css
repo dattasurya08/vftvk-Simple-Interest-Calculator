@@ -1,4 +1,26 @@
-body {background-color:tan;}
+body {background-color:black;}
 h1{color:green;}
-
-
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: inherit;
+    width: 500px;
+    padding: 50px;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 25px;
+}
+.box h1{
+  text-align: center;
+  font-size: 200%;
+  font-family: sans-serif, "Arial";
+  font-weight: 900;
+  transform: translate(0%, -100%);
+  color: grey;
+}
+.box .inner{
+  width: 300px;
+  align-items: center;
+  transform: translate(40%, -10%);
+}

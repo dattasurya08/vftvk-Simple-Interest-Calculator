@@ -20,7 +20,7 @@ body {background-color:black;}
   color: grey;
 }
 .box .inner{
-  width: 350px;
+  width: 360px;
   align-items: center;
   transform: translate(35%, -10%);
   font-weight: bold;

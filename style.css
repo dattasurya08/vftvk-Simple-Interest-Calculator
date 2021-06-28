@@ -9,6 +9,7 @@ body {background-color:black;}
     transform: translate(-50%,-50%);
     background-color: white;
     border-radius: 25px;
+    font-family: sans-serif, "Arial";
 }
 .box h1{
   text-align: center;
@@ -22,4 +23,8 @@ body {background-color:black;}
   width: 300px;
   align-items: center;
   transform: translate(40%, -10%);
+  font-weight: bold;
+}
+.box .inner .slider{
+  color: blue;
 }

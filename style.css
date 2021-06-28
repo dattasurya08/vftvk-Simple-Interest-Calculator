@@ -20,9 +20,9 @@ body {background-color:black;}
   color: grey;
 }
 .box .inner{
-  width: 360px;
+  width: 400px;
   align-items: center;
-  transform: translate(35%, -10%);
+  transform: translate(30%, -10%);
   font-weight: bold;
 }
 .box .inner .slider{

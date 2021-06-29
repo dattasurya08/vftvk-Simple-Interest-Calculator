@@ -25,9 +25,6 @@ body {background-color:black;}
   transform: translate(30%, -10%);
   font-weight: bold;
 }
-.box .inner .slider{
-  color: blue;
-}
 .box .inner p{
   font-weight: normal;
 }

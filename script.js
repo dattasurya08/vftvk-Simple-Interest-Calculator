@@ -12,15 +12,16 @@ function compute()
       var year = dt.getFullYear();
       year = parseInt(year) + parseInt(y);
 
-      string = "If you deposit " + p + ",<br/>";
-      string += "at an interest rate of " + r + ".<br/>";
-      string += "You will recieve an amount of " + res + ",<br/>";
-      string += "in the year " + year;
+      string = "If you deposit <mark>" + p + "</mark>,<br/>";
+      string += "at an interest rate of <mark>" + r + "</mark>.<br/>";
+      string += "You will recieve an amount of <mark>" + res + "</mark>,<br/>";
+      string += "in the year <mark>" + year + "</mark>";
       document.getElementById("result").innerHTML = string;
     }
     else {
         /*string = "Enter valid Principal";*/
         alert("Enter a Positive Number");
+        document.getElementById("principal").focus();
     }
 }
 

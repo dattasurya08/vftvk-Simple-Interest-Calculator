@@ -1,11 +1,11 @@
 function compute()
 {
-    var p = document.getElementById("principle").value;
+    var p = document.getElementById("principal").value;
     var r = document.getElementById("rate").value;
     var y = document.getElementById("years").value;
     var string = '';
 
-    if(p){
+    if(p > 0){
       var res = (p * r * y)/100;
 
       var dt = new Date();
@@ -16,11 +16,12 @@ function compute()
       string += "at an interest rate of " + r + ".<br/>";
       string += "You will recieve an amount of " + res + ",<br/>";
       string += "in the year " + year;
+      document.getElementById("result").innerHTML = string;
     }
     else {
-        string = "Enter valid Principle";
+        /*string = "Enter valid Principal";*/
+        alert("Enter a Positive Number");
     }
-    document.getElementById("result").innerHTML = string;
 }
 
 function rate_disp()

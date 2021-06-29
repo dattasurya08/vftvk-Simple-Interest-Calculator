@@ -28,3 +28,6 @@ body {background-color:black;}
 .box .inner .slider{
   color: blue;
 }
+.box .inner p{
+  font-weight: normal;
+}

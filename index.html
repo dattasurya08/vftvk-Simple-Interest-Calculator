@@ -8,9 +8,12 @@
             <h1>Simple Interest Calculator</h1>
             <div class="inner">
                 <form>
-                    Amount &emsp;&emsp;&ensp; <input type="number"  id="principal">
+                    Amount &emsp;&emsp;&ensp;
+                    <input type="number"  id="principle">
                     <br/><br/>
-                    Interest Rate &nbsp;&ensp; <input type="range" min="0" max="20" value="3.5" step="0.1" class="slider" id="rate" onclick="rate_disp()">
+                    Interest Rate &nbsp;
+                    <input type="range"min="0" max="20" value="10" step="0.1"
+                        class="slider" id="rate" onchange="rate_disp()">
                     <span id="rt"></span>
                     <br/><br/>
                     No. of Years &nbsp;&ensp; <select id="years"></select>

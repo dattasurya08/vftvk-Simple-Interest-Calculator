@@ -1,18 +1,25 @@
 function compute()
 {
-    var p = document.getElementById("principal").value;
+    var p = document.getElementById("principle").value;
     var r = document.getElementById("rate").value;
     var y = document.getElementById("years").value;
-    var res = (p * r * y)/100;
+    var string = '';
 
-    var dt = new Date();
-    var year = dt.getFullYear();
-    year = parseInt(year) + parseInt(y);
+    if(p){
+      var res = (p * r * y)/100;
 
-    var string = "If you deposit " + p + ",<br/>";
-    string += "at an interest rate of " + r + ".<br/>";
-    string += "You will recieve an amount of " + res + ",<br/>";
-    string += "in the year " + year;
+      var dt = new Date();
+      var year = dt.getFullYear();
+      year = parseInt(year) + parseInt(y);
+
+      string = "If you deposit " + p + ",<br/>";
+      string += "at an interest rate of " + r + ".<br/>";
+      string += "You will recieve an amount of " + res + ",<br/>";
+      string += "in the year " + year;
+    }
+    else {
+        string = "Enter valid Principle";
+    }
     document.getElementById("result").innerHTML = string;
 }
 
